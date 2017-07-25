@@ -1,0 +1,17 @@
+        EXERCICIOS COM PILHAS
+
+Para fazer os exercicios a seguir, voce precisara do programa
+PILHA_ESTATICA.CPP
+
+1 - Executando o programa, voce ira verificar que ele emite varias
+    vezes a mensagem "Erro: pilha cheia".
+    a) descubra porque isso ocorre.
+    b) modifique o programa, de modo a corrigir tal erro
+
+2 - O procedimento "exibir" nao esta pronto. Complete o que falta
+    para que o programa possa mostrar o conteudo da pilha.
+
+3 - Implemente uma funcao para copiar uma pilha. Ela deve receber como parametros
+    a pilha original e a pilha que deve receber a copia.
+
+

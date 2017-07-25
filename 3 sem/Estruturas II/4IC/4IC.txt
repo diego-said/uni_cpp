@@ -1,0 +1,22 @@
+Estrutura de Dados - Trabalho 4
+
+
+
+Data de Entrega: 31/05/2004 (não será aceita depois).
+ 
+
+Especificação: Resolvam os seguintes exrcícios: 
+1. Implemente as seguintes funções sobre árvore binárias:
+
+a) Escreva uma função para contar a quantidade de nós não-terminais em uma
+   árvore de busca binária.
+
+b) Escreva uma função para calcular a soma do conteúdo de todos os nós de uma
+   árvore binária.
+
+c) Escreva uma função para verificar se uma determinada árvore binária é uma
+   árvore de busca binária (menores à esquerda da raiz, maiores à direita, etc).
+
+d) Uma árvore é estritamente binária se todo vértice ou possui exatamente dois
+   filhos ou não possui nenhum filho. Escreva uma função para verificar se uma
+   determinada árvore é estritamente binária.

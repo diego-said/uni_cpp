@@ -1,0 +1,11 @@
+Estrutura de Dados II - Trabalho 2
+
+
+Data de Apresentação em Laboratório: 03/05 
+Atividade: atividade de programacao, sobre listas ligadas. 
+
+Grupos: grupos de 3 alunos. 
+
+
+A partir das implementações de pilha e fila vistas em sala, e altere suas implementações para que utilizem como área de armazenamento uma lista ligada circular com cabeça. Use as implementações de lista ligada disponível aqui. 
+(EXTRA) Altere a implementação de lista ligada circular com cabeça de lista para que ela se torne uma lista duplamente ligada circular com cabeça de lista. Para isso, altere os tipos básicos e a implementação de suas operações básicas.

@@ -1,0 +1,21 @@
+Estrutura de Dados II - Trabalho 3
+
+
+
+Data de Entrega: 10/05/2004 (não será aceita depois).
+ 
+
+Especificação: Resolva os seguintes exrcícios: 
+
+1. Sobre a implementação de listas ligadas simples (baixe aqui),
+   implemente as seguintes funções:
+
+a) insere_posicao: recebe uma lista ligada, um elemento e um inteiro indicando 
+uma posicao, e insere este elemento nesta posição na lista ligada. Caso a lista 
+ligada tenha menos elementos que a posição desejada, um erro deve ser reportado.
+
+b) remove_posicao: recebe uma lista ligada e um inteiro indicando uma posição, e 
+remove o elemento que estiver nesta posição na lista ligada. Caso a lista ligada 
+não possua nenhum elemento na posição especificada, um erro deve ser reportado.
+
+c) remove_fim: recebe uma lista ligada, e remove o últiimo elemento desta lista.

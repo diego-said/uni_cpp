@@ -1,0 +1,17 @@
+        EXERCICIOS COM FILAS
+
+Para fazer os exercicios a seguir, voce precisara do programa
+FILA_CIRCULAR.CPP
+
+1 - Executando o programa, voce ira verificar que ele emite varias
+    vezes a mensagem "Erro: fila circular cheia".
+    a) descubra porque isso ocorre.
+    b) modifique o programa, de modo a corrigir tal erro
+
+2 - O procedimento "exibir" nao esta pronto. Complete o que falta
+    para que o programa possa mostrar o conteudo da pilha.
+
+3 - Implemente uma funcao para copiar uma fila. Ela deve receber como
+    parametros a fila original e a fila que deve receber a copia.
+
+

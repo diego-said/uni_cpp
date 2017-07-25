@@ -1,0 +1,192 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+void buscar();
+void inserir();
+void molde();
+void menu();
+
+struct VIDEO
+{
+        int cod, quanti;
+	char nome[45],genero[15],comentario[50],tipo[4];
+};
+
+/*variaveis globais*/
+
+VIDEO video[];
+int tam=0;
+
+/* Exibicao do menu */
+
+void menu()
+{
+	int op;
+	clrscr();
+
+				molde();
+				cout<<"\n\xBA Sistema de Controle de Video locadora\n";
+                                cout<<"\n\xBA 1-Inserir um novo Video";
+                               	cout<<"\n\xBA 2-Buscar um video";
+				cout<<"\n\xBA 0-Sair";
+				cout<<"\n\n\xBA Digite a opcao desejada: ";
+				cin>>op;
+                                molde();
+
+		switch(op)
+		{
+		      case 1:
+
+			    inserir();
+			    break;
+
+		      case 2:
+
+			    buscar();
+			    break;
+
+                       default: exit(1);
+
+               }
+
+
+
+}
+/* Inserir VIDEO */
+
+void inserir()
+{
+int cont,i=0;
+clrscr();
+molde();
+	cout<<"\n\xBA Sistema de Controle da VideoLocadora\n";
+                   if(tam==0)
+                   {
+                   cout<<"\n\xBA Digite a quantidade de cadastros TOTAL: ";
+                   cin>>tam;
+                   cout<<endl;
+                   }
+                   if(video[i].cod!=0) {cout<<"\n\xBA Nao ha espaco 
+disponivel, chamar programador";}
+                   else
+                   {
+                         for(i=0;i<tam;i++)
+	                 {
+                                video[i].cod=i+1;
+
+                                clrscr();
+                                molde();
+                                cout<<"\n\xBA Sistema de Controle da 
+VideoLocadora\n";
+			        cout<<"\n\xBA 1-Inserir um novo video";
+			        cout<<"\n\n\xBA Codigo Definido: "<<video[i].cod;
+			        cout<<"\n\n\xBA Digite o nome: ";
+                                gets(video[i].nome);
+			        cout<<"\n\xBA Genero: ";
+			        cin>>video[i].genero;
+			        cout<<"\n\xBA Tipo (DVD ou VHS): ";
+			        cin>>video[i].tipo;
+			        cout<<"\n\xBA Quantidade disponivel: ";
+			        cin>>video[i].quanti;
+			        cout<<"\n\xBA location: p"<<(i+1);
+			        cout<<"\n\n\xBA Comentario: ";
+                                gets(video[i].comentario);
+			        cout<<"\n\xBA Deseja continuar cadastrando (0 sair, 1 continuar): 
+";
+			        cin>>cont;
+                                if(cont!=1) menu();
+                                }
+
+		      }
+}
+
+
+
+void buscar()
+{
+int mo=0,i,r;
+char busc[50];
+clrscr();
+molde();
+cout<<"\n\xBA Sistema de Controle da Locadora" <<endl;
+cout<<"\n\xBA Modo de pesquisa:"<<endl;
+cout<<"\n\xBA 1-Nome do Filme\n\xBA 2-Codigo\n\xBA 3-Genero\n\xBA 4-Listar 
+todos os nomes\n\xBA 0-Sair\n\xBA Digite a opcao: ";
+cin>>mo;
+        switch(mo)
+	{
+        case '1':
+        cout<<"\n\xBA Insira o nome: ";
+                  gets(busc);
+                  for(i=0;i<tam;i++)
+                                  if(strcmp(busc,video[i].nome)!=0)
+	                          {
+                                  cout<<"\n\xBA Video encontrado";
+                                  }
+                                  else
+                                  {
+                                  cout<<"\nVideo nÆo encontrado!";
+                                  }
+                                   break;
+
+        case '4': for(i=0;i<tam;i++)
+                {
+                cout<<"\n\xBA "<<video[i].nome<<"\n\xBA Cod "<<video[i].cod;
+                getch();
+                }
+
+                break;
+        }
+}
+
+
+
+//desenha
+void molde(void)
+{
+int i,j;
+clrscr();
+cout<<"\n\xC9";
+               for(i=0;i<75;i++)
+               {
+               cout<<"\xCD";
+               }
+cout<<"\xBB";
+
+             for(j=1;j<20;j++)
+             {
+             gotoxy(1 ,j+2 );
+             cout<<"\xBA";
+             gotoxy(77,j+2);
+             cout<<"\xBA";
+             }
+cout<<"\n\xC8";
+               for(i=0;i<75;i++)
+               {
+               cout<<"\xCD";
+               }
+cout<<"\xBC";
+gotoxy(2,2);
+cout<<"\n\xBA   \xDC\xDC\xDC\xDC\xDC\n\xBA   \xDBO\xDBO\xDB\n\xBA   
+\xDF\xDF\xDF\xDF\xDF\n";
+
+}
+
+void main()
+{
+	int op, mo;
+
+				textcolor(LIGHTGREEN);
+				textbackground(BLUE);
+        menu();
+        while(op!=0||mo!=0)
+        {
+        menu();
+        }
+
+	//getch();
+}
+

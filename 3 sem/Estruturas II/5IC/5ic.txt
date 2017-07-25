@@ -1,0 +1,37 @@
+Estrutura de Dados - Trabalho 5
+
+
+
+Data de Entrega: 07/06/2004 (não será aceita depois).
+ 
+
+Especificação: Resolvam os seguintes exrcícios: 
+1. Implemente as seguintes funções sobre árvore binárias:
+
+a) Escreva uma função que recebe como entrada uma árvore binária e devolve a
+   quantidade de nós contidos nesta árvore.
+
+b) Escreva uma função que recebe uma árvore binária e inverte os elementos
+   nela contidos. Exemplo:
+
+     B             B
+    / \   --==>   / \ 
+   A   D         D   A
+      / \       / \
+     C   E     E   C
+
+c) Escreva uma função que recebe um ponteiro para uma célula de uma árvore de
+   busca binária e devolve o ponteiro para a próxima célula (atravessamento
+   'em-ordem'). Exemplo: 
+
+   Seja a árvore         A
+                        / \
+                       B   C
+                          / \
+                         D   E
+
+   - A próxima célula depois de B é A.
+   - A próxima célula depois de D é C.
+   - A próxima célula depois de C é E.
+   - A próxima célula depois de A é D.
+
